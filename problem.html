@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP-Link - 문제점</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: '#0A2540', accent: '#00C4B5', bgcol: '#F4F6F8', secondary: '#64748B', txt: '#1E293B' },
+            fontFamily: { sans: ['Pretendard', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-bgcol text-txt font-sans flex flex-col min-h-screen">
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex-shrink-0 flex items-center">
+        <a href="index.html" class="text-primary font-bold text-2xl tracking-tighter">IP-Link</a>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="problem.html" class="text-primary border-b-2 border-accent px-3 py-2 text-sm font-bold">문제점</a>
+        <a href="service.html" class="text-secondary hover:text-primary px-3 py-2 text-sm font-medium">서비스</a>
+        <a href="how-it-works.html" class="text-secondary hover:text-primary px-3 py-2 text-sm font-medium">프로세스</a>
+        <a href="use-cases.html" class="text-secondary hover:text-primary px-3 py-2 text-sm font-medium">파트너</a>
+        <a href="pricing.html" class="text-secondary hover:text-primary px-3 py-2 text-sm font-medium">요금안내</a>
+      </nav>
+      <div class="hidden md:flex items-center">
+        <a href="contact.html" class="bg-accent text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-teal-500 transition shadow-md">베타 테스터 무료 신청</a>
+      </div>
+      <div class="flex md:hidden items-center">
+        <button id="mobile-menu-btn" class="text-secondary hover:text-primary focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="problem.html" class="block text-primary bg-gray-50 px-3 py-2 text-base font-bold">문제점</a>
+        <a href="service.html" class="block text-secondary hover:text-primary px-3 py-2 text-base font-medium">서비스</a>
+        <a href="how-it-works.html" class="block text-secondary hover:text-primary px-3 py-2 text-base font-medium">프로세스</a>
+        <a href="use-cases.html" class="block text-secondary hover:text-primary px-3 py-2 text-base font-medium">파트너</a>
+        <a href="pricing.html" class="block text-secondary hover:text-primary px-3 py-2 text-base font-medium">요금안내</a>
+        <a href="contact.html" class="block bg-accent text-white px-3 py-2 mt-4 rounded-md text-base font-bold text-center">베타 테스터 무료 신청</a>
+    </div>
+  </div>
+</header>
+
+<main class="flex-grow">
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-primary mb-6">특허사무소 방문 전, 아이디어 정리가 막막하셨나요?</h1>
+        <p class="text-lg text-secondary">수많은 개인 발명가, 예비 창업자, 중소기업들이 겪고 있는 핵심적인 페인 포인트(Pain Point)를 직시합니다.</p>
+      </div>
+
+      <div class="space-y-8">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
+          <div class="flex-shrink-0 bg-red-100 text-red-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">01</div>
+          <div>
+            <h3 class="text-xl font-bold text-primary mb-3">아이디어 구조화 및 문서 작성의 한계</h3>
+            <p class="text-secondary leading-relaxed">
+              단순한 스케치나 구상 단계의 아이디어를 법적 효력을 지닌 특허 문서의 구성요소로 분리하고, 청구항 후보를 작성하는 것은 비전문가에게 거대한 장벽입니다. 어디서부터 시작해야 할지 몰라 포기하는 경우가 빈번합니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
+          <div class="flex-shrink-0 bg-red-100 text-red-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">02</div>
+          <div>
+            <h3 class="text-xl font-bold text-primary mb-3">과도한 초기 비용과 소통의 비효율</h3>
+            <p class="text-secondary leading-relaxed">
+              사전 준비 없이 대리인(변리사)을 찾아갈 경우, 아이디어의 핵심을 설명하고 문서를 기획하는 단순 상담 과정에 지나치게 많은 시간과 착수 비용이 발생하게 됩니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
+          <div class="flex-shrink-0 bg-red-100 text-red-600 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl">03</div>
+          <div>
+            <h3 class="text-xl font-bold text-primary mb-3">출원 이후 자산화 및 거래의 막막함</h3>
+            <p class="text-secondary leading-relaxed">
+              힘들게 특허를 출원하더라도, 이를 어떻게 기업에 제안하고 투자자에게 피칭하여 실질적인 펀딩 및 비즈니스 거래로 연결할 수 있는지 막막함을 겪습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <p class="text-xl font-bold text-primary mb-6">이 모든 문제를 해결할 단 하나의 플랫폼 구조</p>
+        <a href="service.html" class="inline-block border-2 border-accent text-accent hover:bg-accent hover:text-white font-bold py-3 px-8 rounded-lg transition">서비스 솔루션 확인하기</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-primary text-white py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-accent font-bold mb-4">현재는 초기 베타 테스팅 단계로 참여 후보군을 모집 중입니다.</p>
+    <p class="text-sm text-gray-400">&copy; 2023 IP-Link. All rights reserved.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
