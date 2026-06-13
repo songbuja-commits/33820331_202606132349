@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP-Link - 서비스 안내</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: '#0A2540', accent: '#00C4B5', bgcol: '#F4F6F8', secondary: '#64748B', txt: '#1E293B' },
+            fontFamily: { sans: ['Pretendard', 'sans-serif'] }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-bgcol text-txt font-sans flex flex-col min-h-screen">
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex-shrink-0 flex items-center">
+        <a href="index.html" class="text-primary font-bold text-2xl tracking-tighter">IP-Link</a>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="problem.html" class="text-secondary hover:text-primary px-3 py-2 text-sm font-medium">문제점</a>
+        <a href="service.html" class="text-primary border-b-2 border-accent px-3 py-2 text-sm font-bold">서비스</a>
+        <a href="how-it-works.html" class="text-secondary hover:text-primary px-3 py-2 text-sm font-medium">프로세스</a>
+        <a href="use-cases.html" class="text-secondary hover:text-primary px-3 py-2 text-sm font-medium">파트너</a>
+        <a href="pricing.html" class="text-secondary hover:text-primary px-3 py-2 text-sm font-medium">요금안내</a>
+      </nav>
+      <div class="hidden md:flex items-center">
+        <a href="contact.html" class="bg-accent text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-teal-500 transition shadow-md">베타 테스터 무료 신청</a>
+      </div>
+      <div class="flex md:hidden items-center">
+        <button id="mobile-menu-btn" class="text-secondary hover:text-primary focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="problem.html" class="block text-secondary hover:text-primary px-3 py-2 text-base font-medium">문제점</a>
+        <a href="service.html" class="block text-primary bg-gray-50 px-3 py-2 text-base font-bold">서비스</a>
+        <a href="how-it-works.html" class="block text-secondary hover:text-primary px-3 py-2 text-base font-medium">프로세스</a>
+        <a href="use-cases.html" class="block text-secondary hover:text-primary px-3 py-2 text-base font-medium">파트너</a>
+        <a href="pricing.html" class="block text-secondary hover:text-primary px-3 py-2 text-base font-medium">요금안내</a>
+        <a href="contact.html" class="block bg-accent text-white px-3 py-2 mt-4 rounded-md text-base font-bold text-center">베타 테스터 무료 신청</a>
+    </div>
+  </div>
+</header>
+
+<main class="flex-grow">
+  <section class="bg-white py-16 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-primary mb-6">생각 속에 갇혀 있던 아이디어를 법적 권리로 구체화하세요.</h1>
+      <p class="text-lg text-secondary max-w-3xl mx-auto">
+        머릿속 생각을 AI가 체계적인 초안 문서로 변환하고, 파트너 변리사가 출원 가능성을 직접 진단합니다.<br>
+        발명가 및 스타트업을 위한 완벽한 맞춤형 솔루션을 제공합니다.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-primary mb-12 text-center">AI Agent가 생성하는 5대 핵심 산출물</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-accent">
+          <h3 class="text-lg font-bold text-primary mb-3">1. 특허/실용신안 명세서 초안</h3>
+          <p class="text-secondary text-sm">아이디어의 기술적 배경과 해결하고자 하는 과제를 완벽하게 논리적인 문서 형태로 변환합니다.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-accent">
+          <h3 class="text-lg font-bold text-primary mb-3">2. 청구항 초안</h3>
+          <p class="text-secondary text-sm">권리 범위를 정의하는 핵심 영역으로, 변리사 검토에 최적화된 초기 청구항 구조를 제시합니다.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-accent">
+          <h3 class="text-lg font-bold text-primary mb-3">3. 도면설명 초안</h3>
+          <p class="text-secondary text-sm">시각적 아이디어를 보조할 수 있도록, 구조와 작동 원리에 대한 명확한 텍스트 설명을 생성합니다.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-accent">
+          <h3 class="text-lg font-bold text-primary mb-3">4. 선행기술 대비표</h3>
+          <p class="text-secondary text-sm">기존 기술들과의 차별점과 진보성을 입증할 수 있도록 비교 분석 초안을 제공합니다.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-accent">
+          <h3 class="text-lg font-bold text-primary mb-3">5. 핵심 기술 요약서</h3>
+          <p class="text-secondary text-sm">비전문가도 직관적으로 이해할 수 있는 1장 분량의 기술 개요를 도출합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-bold mb-6">출원 이후의 자산화까지 완벽하게 지원합니다</h2>
+      <p class="text-gray-300 mb-10 max-w-2xl mx-auto">단순 권리화를 넘어 IP 요약서, 기술소개서, 펀딩 자료 등을 자동 패키징하여 즉각적인 투자 유치와 기술 거래를 위한 사업화 환경을 구축합니다.</p>
+      <a href="contact.html" class="inline-block bg-accent hover:bg-teal-500 text-white font-bold py-3 px-8 rounded-lg transition">내 아이디어로 첫 단계 시작하기 (베타 참가)</a>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-primary text-white py-10 border-t border-gray-700">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-accent font-bold mb-4">현재는 초기 베타 테스팅 단계로 참여 후보군을 모집 중입니다.</p>
+    <p class="text-sm text-gray-400">&copy; 2023 IP-Link. All rights reserved.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
